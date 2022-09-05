@@ -65,8 +65,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 195px;
+    width: 180px;
     height: 280px;
+    margin-bottom: 40px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -80,8 +82,8 @@
 
 .animelist img {
     width: 185px;
+    height: 280px;
     border-radius: 5px;
-    margin-bottom: 10px;
     transition: all 0.2s ease-in;
 }
 
