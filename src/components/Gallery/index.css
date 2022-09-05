@@ -5,10 +5,15 @@
     background-color: #0B1622;
 }
 
+.carousel {
+    height: 100%;
+}
+
 .carousel img {
     width: 100%;
     height: 100%;
     padding-top: 30px;
+    object-fit: cover;
 }
 
 .carousel h1 {
