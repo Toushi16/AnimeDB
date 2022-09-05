@@ -1,0 +1,179 @@
+.MainContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #0B1622;
+    padding: 20px 0;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.btn-pagination {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+}
+
+.btn-pagination:hover {
+    background-color: #95C3F5;
+    border-radius: 50px;
+}
+
+.btn-pagination.active {
+    background-color: #007BFF;
+    border-radius: 50px;
+}
+
+.animelist {
+    width: 900px;
+    height: 1818px;
+    background-color: #151F2E;
+    border-radius: 10px;
+}
+
+.animelist__title {
+    color: white;
+    font-family: monospace;
+    position: relative !important;
+    text-align: start !important;
+    font-size: 22px !important; 
+    padding: 18px;
+    border-bottom: 1px solid #303644;
+    margin-bottom: 20px;
+}
+
+.animelist .CardList {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.animelist .Card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 320px;
+    cursor: pointer;
+}
+
+.animelist .Card:hover .anime-title{
+    opacity: 1;
+    -webkit-text-stroke: 0.25px black;
+    text-shadow: 0px 0px 20px black;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.animelist img {
+    width: 185px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.animelist .Card img:hover {
+    opacity: 0.4;
+    filter: saturate(1.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.animelist .anime-title {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.animelist .Card .Card__info span {
+    display: none;
+}
+
+.toprated {
+    width: 350px;
+    height:100%;
+    background-color: #151F2E;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.toprated__title {
+    color: white;
+    font-family: monospace;
+    width: 100% !important;
+    text-align: start !important;
+    font-size: 22px !important; 
+    padding: 18px;
+    border-bottom: 1px solid #303644;
+}
+
+.toprated .CardList {
+    display: flex;
+    gap: 17px;
+    padding: 20px;
+}
+
+.toprated .Card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 332px;
+    height: 88px;
+    cursor: pointer;
+}
+
+.toprated img {
+    width: 70px;
+    height: 90px;
+}
+
+.toprated .anime-title {
+    width: 200px;
+    text-align: start !important;
+    color: white;
+    font-size: 14px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.toprated .Card .Card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.toprated .Card .Card__info span {
+    color: white;
+    font-size: 14px;
+}
+
+.asuka-bg {
+    position: fixed;
+    vertical-align: middle;
+    top: unset;
+    bottom: -365px;
+    right: 0;
+    height: 840px;
+    width: auto;
+    z-index: 0;
+    transform: translate(10%);
+}

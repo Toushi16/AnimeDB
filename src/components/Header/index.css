@@ -1,0 +1,46 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    z-index: 3;
+    background-color: #11161D;
+}
+
+.Header__title {
+    color: white;
+    font-family: 'Permanent Marker';
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+}
+
+.Header button {
+    border: none;
+    background-color: transparent;
+}
+
+.Header button i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Header button i:hover {
+    color: #3DB4F2;
+}
+
+/* .Header__input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #232f41;
+}
+
+.Header__input::placeholder,:focus{
+    color: gainsboro;
+    font-size: 0.95rem;
+    outline: none;
+} */
