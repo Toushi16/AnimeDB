@@ -2,7 +2,6 @@ import './index.css';
 
 const Card = ({ data }) => {
     const { poster_path, name, id, vote_average } = data;
-    console.log(data)
     return (
         <>
         {   
