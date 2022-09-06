@@ -6,4 +6,5 @@ const GET = async( type, page ) => {
   return await res.json();
 }
 
+
 export { GET };
