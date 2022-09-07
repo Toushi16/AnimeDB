@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     height: 75px;
-    z-index: 3;
+    z-index: 2;
     background-color: #11161D;
 }
 
@@ -27,15 +27,21 @@
     border: none;
     background-color: transparent;
     width: 22px;
+    z-index: 2;
 }
 
 .Header button i {
     color: white;
     font-size: 20px;
     cursor: pointer;
-    margin-right: 40px;
 }
 
 .Header button i:hover {
     color: #3DB4F2;
+}
+
+@media only screen and (max-width: 1400px){
+    .Header-container {
+        width: 90%;
+    }
 }

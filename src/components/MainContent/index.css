@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
     background-color: #0B1622;
     padding: 20px 0;
 }
@@ -117,6 +116,7 @@
     background-color: #151F2E;
     border-radius: 10px;
     z-index: 1;
+    margin-left: 90px;
 }
 
 .toprated__title {
@@ -174,9 +174,63 @@
     vertical-align: middle;
     top: unset;
     bottom: -365px;
-    right: 0;
+    right: -30px;
     height: 840px;
     width: auto;
     z-index: 0;
     transform: translate(10%);
+}
+
+@media only screen and (max-width: 1650px){
+    .asuka-bg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1340px){
+    .animelist {
+       margin-bottom: 20px;
+    }
+
+    .animelist__title {
+        text-align: center !important;
+    }
+
+    .toprated {
+        width: 900px;
+        margin-left: 0;
+    }
+
+    .toprated .CardList {
+        display: flex;
+        justify-content: center;
+    }
+
+    .toprated__title {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (max-width: 820px){
+	.animelist {
+        height: 100%;
+     }
+
+     .animelist .Card {
+        margin-right: 0;
+     }
+}
+
+@media only screen and (max-width: 600px){
+    .animelist {
+        margin-top: 70px;
+    }
+
+}
+
+@media only screen and (max-width: 385px){
+    .toprated {
+        width: 100%;
+    }
+
 }

@@ -11,10 +11,10 @@ const MainContent = () => {
     const [paginationTopRated, setPaginationTopRated] = useState("1");
 
     useEffect(() => {
-        GET('discover/tv', paginationLatest)
+        GET('tv/popular','',paginationLatest)
         .then(data => setTvList(data.results));
 
-        GET('tv/top_rated',paginationTopRated)
+        GET('tv/top_rated','',paginationTopRated)
         .then(data => setTopRated(data.results));
 
     }, [paginationLatest, paginationTopRated]);

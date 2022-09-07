@@ -21,7 +21,7 @@ const AnimeModal = ({ data, setModalVisib }) => {
                     <div className='modal-left-side'>
                         <img className='modal-poster' src={`https://image.tmdb.org/t/p/w342${ poster_path }`} alt="" />
                         <h1 className='modal-name'>{ name }</h1>
-                        <span className='modal-date'>{vote_average}⭐</span>
+                        <span className='modal-vote'>{vote_average}⭐</span>
                     </div>
                     <div className='modal-right-side'>
                         <p className='modal-overview'>{ overview }</p>    

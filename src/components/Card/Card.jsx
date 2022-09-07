@@ -1,5 +1,6 @@
 import './index.css';
 import AnimeModal from '../AnimeModal';
+import Header from '../Header';
 import { useState } from 'react';
 
 const Card = ({ data }) => {
@@ -8,7 +9,7 @@ const Card = ({ data }) => {
     const [modalVisib, setModalVisib] = useState (false);
 
     const onHandleClick =() => {
-        setModalVisib(true)
+        setModalVisib(true);
     };
     
     return (

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { GET } from '../../utils/api';
 import './index.css';
+import CardList from '../CardList';
 
 const SearchModal = ({ setSearchVisib }) => {
     const [searchList, setSearchList] = useState([]);
@@ -14,6 +15,12 @@ const SearchModal = ({ setSearchVisib }) => {
         setCurrentValue(e.target.value);
     };
 
+    useEffect(() => {
+        currentValue && GET('search/tv',`&query=${currentValue}`)
+            .then(data => setSearchList(data.results.filter(el => el.origin_country[0] === 'JP')));
+            currentValue === '' && setSearchList('');
+    },[currentValue]);
+
     return (
         <div className='SearchModal'>
             <div className='search-box'>
@@ -22,12 +29,10 @@ const SearchModal = ({ setSearchVisib }) => {
                     <i className="fa-solid fa-xmark"></i>
                 </button>
             </div>
-            <div className='cucu'>
-                {/* <img src="https://image.tmdb.org/t/p/w92/jYeTfpxS3IzgqKkYCjmdCKwq8PW.jpg" alt="" />
-                <img src="https://image.tmdb.org/t/p/w92/jYeTfpxS3IzgqKkYCjmdCKwq8PW.jpg" alt="" />
-                <img src="https://image.tmdb.org/t/p/w92/jYeTfpxS3IzgqKkYCjmdCKwq8PW.jpg" alt="" />
-                <img src="https://image.tmdb.org/t/p/w92/jYeTfpxS3IzgqKkYCjmdCKwq8PW.jpg" alt="" /> */}
+            <div className='search-card'>
+                {searchList.length>0 && <CardList data={searchList} />}
             </div>
+                
         </div>
     )
 }
