@@ -17,7 +17,7 @@ const SearchModal = ({ setSearchVisib }) => {
 
     useEffect(() => {
         currentValue && GET('search/tv',`&query=${currentValue}`)
-            .then(data => setSearchList(data.results.filter(el => el.origin_country[0] === 'JP')));
+            .then(data => setSearchList(data.results.filter(el => el.origin_country[0] === 'JP').filter(el => el.genre_ids[0] === 16)));
             currentValue === '' && setSearchList('');
     },[currentValue]);
 
