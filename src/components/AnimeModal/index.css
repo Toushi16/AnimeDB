@@ -84,8 +84,10 @@
     overflow-y: auto;
     color: whitesmoke;
     font-size: 1.4vmax;
+    text-align: center;
     letter-spacing: 1.5px;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 650px){
@@ -103,6 +105,10 @@
 
     .modal-vote {
         padding-bottom: 10px;
+    }
+
+    .modal-overview {
+        font-size: 1.6vmax;
     }
 }
 
