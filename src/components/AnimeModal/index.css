@@ -118,3 +118,21 @@
     }
 }
 
+@media only screen and (max-height: 780px){
+    .modal-overview {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-height: 700px){
+    .modal-overview {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-height: 607px){
+    .modal-overview {
+        height: 100px;
+    }
+}
+
