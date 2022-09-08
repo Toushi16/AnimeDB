@@ -80,6 +80,7 @@
 }
 
 .modal-overview {
+    padding-right: 10px;
     height: 70%;
     overflow-y: auto;
     color: whitesmoke;
