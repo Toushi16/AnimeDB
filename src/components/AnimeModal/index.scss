@@ -110,6 +110,7 @@
 
                     .modal-name , .modal-vote {
                         font-size: 22px;
+                        width: 240px;
                     }
 
                     .modal-vote {
@@ -120,26 +121,7 @@
                 .modal-right-side {
                     .modal-overview {
                         font-size: 1.6vmax;
-                        height: 250px;
-                    }
-                }
-            }    
-        }
-    }
-}
-
-@media only screen and (max-width: 650px){
-	.modal-overlay {
-        .modal {
-            .modal__info {
-                flex-direction: column;
-        
-                .modal-left-side {
-                    gap: 10px;
-
-                    .modal-name , .modal-vote {
-                        font-size: 22px;
-                        width: 240px;
+                        height: 240px;
                     }
                 }
             }    
