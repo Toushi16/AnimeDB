@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 import Card from '../Card';
 const CardList = ({ data, nCards }) => {
     return (

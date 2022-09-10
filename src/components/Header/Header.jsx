@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import SearchModal from '../SearchModal';
-import './index.css';
+import './index.scss';
 
 const Header = () => {
     const [searchVisib, setSearchVisib] = useState(false);

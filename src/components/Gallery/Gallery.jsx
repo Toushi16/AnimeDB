@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react';
 import carousel from '../../utils/carousel';
-import './index.css';
+import './index.scss';
 
 const Gallery = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

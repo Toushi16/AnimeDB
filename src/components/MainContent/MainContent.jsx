@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { GET } from '../../utils/api';
 import CardList from '../CardList';
 import AsukaBg from '../../img/asuka.png';
-import './index.css';
+import './index.scss';
 
 const MainContent = () => {
     const [tvlist, setTvList] = useState([]);

@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import './index.css';
+import './index.scss';
 
 
 const AnimeModal = ({ data, setModalVisib }) => {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { GET } from '../../utils/api';
-import './index.css';
 import CardList from '../CardList';
+import './index.scss';
 
 const SearchModal = ({ setSearchVisib }) => {
     const [searchList, setSearchList] = useState([]);

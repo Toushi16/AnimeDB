@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.CardList {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $black-pearl-light;
+    border-radius: 10px;
+}
