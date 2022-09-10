@@ -99,63 +99,73 @@
 }
 
 @media only screen and (max-width: 650px){
-	.modal__info {
-        flex-direction: column;
+	.modal-overlay {
+        .modal {
+            .modal__info {
+                flex-direction: column;
+        
+                .modal-left-side {
+                    gap: 10px;
 
-        .modal-left-side {
-            gap: 10px;
-        }
+                    .modal-name , .modal-vote {
+                        font-size: 22px;
+                    }
 
-        .modal-name , .modal-vote {
-            font-size: 22px;
-        }
-    
-        .modal-vote {
-            padding-bottom: 10px;
+                    .modal-vote {
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .modal-right-side {
+                    .modal-overview {
+                        font-size: 1.6vmax;
+                        height: 250px;
+                    }
+                }
+            }    
         }
     }
-    
-    .modal-right-side {
-        .modal-overview {
-            font-size: 1.6vmax;
-        }
-    }
-}
-
-@media only screen and (max-width: 470px){
-    .modal-right-side {
-        .modal-overview {
-            height: 250px;
-        }
-    }
-    
-    
 }
 
 @media only screen and (max-height: 780px){
-    .modal-right-side {
-        .modal-overview {
-            height: 200px;
+    .modal-overlay {
+        .modal {
+            .modal__info {
+                .modal-right-side {
+                    .modal-overview {
+                        height: 200px;
+                    }
+                }
+            }
         }
     }
-    
 }
 
 @media only screen and (max-height: 700px){
-    .modal-right-side {
-        .modal-overview {
-            height: 150px;
+    .modal-overlay {
+        .modal {
+            .modal__info {
+                .modal-right-side {
+                    .modal-overview {
+                        height: 150px;
+                    }
+                }
+            }
         }
     }
-    
 }
 
 @media only screen and (max-height: 607px){
-    .modal-right-side {
-        .modal-overview {
-            height: 100px;
+    .modal-overlay {
+        .modal {
+            .modal__info {
+                .modal-right-side {
+                    .modal-overview {
+                        height: 100px;
+                    }
+                }
+            }
         }
     }
-    
 }
 
